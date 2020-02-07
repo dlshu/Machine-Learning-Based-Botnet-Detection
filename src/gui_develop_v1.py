@@ -5,7 +5,7 @@ from Tkinter import *
 from ttk import *
 from tkFileDialog import *
 import dataset_load
-import models_v1
+import models_v1 as models
 import threading
 import time
 import pickle
