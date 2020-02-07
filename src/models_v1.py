@@ -12,6 +12,7 @@ from keras.models import *
 from keras.layers import Dense, Activation
 from keras.optimizers import *
 import threading
+import pickle
 
 class LogModel(threading.Thread):
     """Threaded Logistic Regression Model"""
