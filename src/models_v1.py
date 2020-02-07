@@ -46,7 +46,7 @@ class LogModel(threading.Thread):
 
         # save the model to disk
         filename = 'trained_model_LR.sav'
-        pickle.dump(model, open(filename, 'wb'))
+        pickle.dump(logModel, open(filename, 'wb'))
 
 
 
@@ -83,7 +83,7 @@ class SVMModel(threading.Thread):
 
         # save the model to disk
         filename = 'trained_model_SVM.sav'
-        pickle.dump(model, open(filename, 'wb'))
+        pickle.dump(svModel, open(filename, 'wb'))
 
 
 class DTModel(threading.Thread):
@@ -115,7 +115,7 @@ class DTModel(threading.Thread):
 
         # save the model to disk
         filename = 'trained_model_Tree.sav'
-        pickle.dump(model, open(filename, 'wb'))
+        pickle.dump(dtModel, open(filename, 'wb'))
 
 
 class NBModel(threading.Thread):
@@ -147,7 +147,7 @@ class NBModel(threading.Thread):
 
         # save the model to disk
         filename = 'trained_model_Bayes.sav'
-        pickle.dump(model, open(filename, 'wb'))
+        pickle.dump(nbModel, open(filename, 'wb'))
 
 
 class KNNModel(threading.Thread):
@@ -183,7 +183,7 @@ class KNNModel(threading.Thread):
 
         # save the model to disk
         filename = 'trained_model_KNN.sav'
-        pickle.dump(model, open(filename, 'wb'))
+        pickle.dump(knnModel, open(filename, 'wb'))
 
 
 class ANNModel(threading.Thread):
